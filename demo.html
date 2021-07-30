@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>FRIENDS & Co.</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+
+
+
+
+<header>
+  
+
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">FRIENDS & CO.</span>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <!--<a class="navbar-brand" href="#">Navbar</a> -->
+    <span></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="text-dark nav-link active" aria-current="page" href="#">HOME</a>
+        <a class="text-dark nav-link" href="#">ABOUT</a>
+        <a class="text-dark nav-link" href="#contact">CONTACT</a>
+        <a class="text-dark nav-link" href="#">SHOP</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+	
+</header>
+
+<body>
+
+	
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/fsco1.jpg" class="d-block w-100" alt="1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/fsco2.jpg" class="d-block w-100" alt="2">
+    </div>
+  
+  </div>
+</div>
+
+<div class="galcontainer">
+	<h6>FOLLOW US ON INSTAGRAM</h6>
+<div class="row">
+  <div class="col-md-3 col-sm-6 "><img src="img/img_5226.jpg" class="img-fluid  w-100" alt="1"></div>
+ <div class="col-md-3 col-sm-6"><img src="img/img_5227.jpg" class="d-block w-100" alt="1"></div>
+ <div class="col-md-3 col-sm-6"><img src="img/img_5228.jpg" class="d-block w-100" alt="1"></div>
+ <div class="col-md-3 col-sm-6"><img src="img/img_5225.jpg" class="d-block w-100" alt="1"></div>
+</div>
+</div>
+	
+
+
+
+
+<footer>
+  <div id="contact" class="card text-center">
+  <div class="card-header">
+   GET IN TOUCH
+  </div>
+  <div class="card-body">
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="card-title form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div> 
+  <div class="form-group">
+
+  <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="bot">
+  <button type="submit" class="btn btn-light">SHARE YOUR FEEDBACK</button>
+</div>
+</form>
+ 
+  </div>
+  <div class="card-footer text-muted">
+   
+  </div>
+</div>
+
+<div onclick="ScrollTop()" id="top-btn">
+  <span class="fa fa-angle-up"></span>
+</div>
+
+</footer>
+
+
+<script type="text/javascript">
+  /* Activates when scrolled */
+document.addEventListener("scroll", yScroll);
+
+function yScroll() {
+
+  var yPos = window.pageYOffset;
+
+  if (yPos > 10) {
+    document.getElementById("top-btn").style.bottom = "10px";
+  } else {
+    document.getElementById("top-btn").style.bottom = "-50px";
+  }
+}
+
+function ScrollTop() {
+
+  var i = window.pageYOffset;
+
+  var intervalTimer = setInterval(function() {
+    if (i > 0) {
+      window.scrollTo(0, i);
+      i -= 15;
+    } else {
+      document.getElementById("top-btn").style.bottom = "-50px";
+      clearInterval(intervalTimer);
+    }
+  }, 0.5);
+}
+</script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,130 @@
+
+span.navbar-brand {
+	font-family: 'futura';
+	letter-spacing: 3px;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0 auto;
+  	display: block;
+}
+
+button.navbar-toggler {
+	position: relative;
+	margin-top: -60px;
+	border: none;
+}
+
+nav div.container-fluid {
+	font-family: 'quicksand';
+	font-size: 13px;
+	letter-spacing: 3px;
+}
+
+div.navbar-nav{
+	text-align: center; 
+}
+
+
+.galcontainer {
+	margin: 20px;
+	padding-top: 50px;
+}
+
+
+.galcontainer h6{
+	font-family: 'quicksand';
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+#top-btn {
+  width: 50px;
+  height: 50px;
+  bottom: -50px;
+  right: 20px;
+  position: fixed;
+  text-align: center;
+  border-radius: 100px;
+  background-color: black;
+  border: solid 1px black;
+  cursor: pointer;
+  transition: all .8s;
+}
+
+#top-btn:hover {
+  background-color: black;
+
+}
+
+#top-btn:hover span {
+  padding-top: 5px;
+  color: white;
+}
+
+#top-btn span {
+  padding-top: 15px;
+  font-size: 20px;
+  /line-height: 50px;
+  color: white;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+
+
+footer div.card{
+	background-color: #282828;
+}
+
+footer .form-group {
+	width: 50%;
+	margin: 0 auto;
+}
+
+div.card {
+	font-family: 'quicksand';
+	font-size: 30px;
+	letter-spacing: 3px;
+	padding-top: 30px;
+}
+.card-header {
+	color:  white;
+}
+
+div label {
+	color: white;
+	font-size: 13px;
+	float: left;
+}
+
+.form-group {
+	padding: 10px;
+}
+
+.bot button{
+	font-family: 'quicksand';
+	font-size: 13px;
+	letter-spacing: 3px;
+	background-color: transparent;
+	color: white;
+}
+
+
+
+
+@media (max-width: 767px) {
+.galcontainer div{
+	padding:  10px;
+}
+
+footer .form-group {
+	width: 60%;
+}
+
+}  
+
+
